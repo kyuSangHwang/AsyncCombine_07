@@ -7,20 +7,27 @@
 
 import SwiftUI
 
- struct BookListView: View {
-     var books: [Book] = Book.sampleBooks
+class BooksViewModel: ObservableObject {
+    @Published var books: [Book] = Book.sampleBooks
+}
 
-     var body: some View {
-         List(books) { book in
-             BookRowView(book: book)
-         }
-         .listStyle(.plain)
-     }
- }
+struct BookListView: View {
+    @StateObject var booksViewModel = BooksViewModel()
+    
+    var body: some View {
+        NavigationStack {
+            List(booksViewModel.books) { book in
+                BookRowView(book: book)
+            }
+            .listStyle(.plain)
+            .navigationTitle("Books")
+        }
+    }
+}
 
- #Preview {
-     BookListView()
- }
+#Preview {
+    BookListView()
+}
 
  //이전코드
  //struct ContentView_Previews: PreviewProvider {
