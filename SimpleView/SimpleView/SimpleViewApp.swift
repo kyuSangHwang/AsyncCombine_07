@@ -11,7 +11,7 @@ import SwiftUI
 struct SimpleViewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ParentView()
         }
     }
 }
