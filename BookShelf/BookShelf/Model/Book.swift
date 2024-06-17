@@ -13,6 +13,7 @@ import Foundation
      var author: String
      var isbn: String
      var pages: Int
+     var isRead: Bool = false
  }
 
  extension Book {
