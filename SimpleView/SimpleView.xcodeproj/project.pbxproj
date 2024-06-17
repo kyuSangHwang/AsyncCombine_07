@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78F03C8C2C1FD5AD00F4FCBB /* SimpleViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F03C8B2C1FD5AD00F4FCBB /* SimpleViewApp.swift */; };
-		78F03C8E2C1FD5AD00F4FCBB /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F03C8D2C1FD5AD00F4FCBB /* ParentView.swift */; };
+		78F03C8E2C1FD5AD00F4FCBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F03C8D2C1FD5AD00F4FCBB /* ContentView.swift */; };
 		78F03C902C1FD5B000F4FCBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F03C8F2C1FD5B000F4FCBB /* Assets.xcassets */; };
 		78F03C932C1FD5B000F4FCBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F03C922C1FD5B000F4FCBB /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		78F03C882C1FD5AD00F4FCBB /* SimpleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F03C8B2C1FD5AD00F4FCBB /* SimpleViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewApp.swift; sourceTree = "<group>"; };
-		78F03C8D2C1FD5AD00F4FCBB /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		78F03C8D2C1FD5AD00F4FCBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78F03C8F2C1FD5B000F4FCBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78F03C922C1FD5B000F4FCBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				78F03C8B2C1FD5AD00F4FCBB /* SimpleViewApp.swift */,
-				78F03C8D2C1FD5AD00F4FCBB /* ParentView.swift */,
+				78F03C8D2C1FD5AD00F4FCBB /* ContentView.swift */,
 				78F03C8F2C1FD5B000F4FCBB /* Assets.xcassets */,
 				78F03C912C1FD5B000F4FCBB /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78F03C8E2C1FD5AD00F4FCBB /* ParentView.swift in Sources */,
+				78F03C8E2C1FD5AD00F4FCBB /* ContentView.swift in Sources */,
 				78F03C8C2C1FD5AD00F4FCBB /* SimpleViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
