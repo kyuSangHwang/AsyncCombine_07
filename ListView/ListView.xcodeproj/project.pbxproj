@@ -11,6 +11,8 @@
 		7894483D2C20035F00DF53D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894483C2C20035F00DF53D9 /* ContentView.swift */; };
 		7894483F2C20036300DF53D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7894483E2C20036300DF53D9 /* Assets.xcassets */; };
 		789448422C20036300DF53D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789448412C20036300DF53D9 /* Preview Assets.xcassets */; };
+		789448492C200F7600DF53D9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789448482C200F7600DF53D9 /* Book.swift */; };
+		7894484B2C200FA000DF53D9 /* BooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894484A2C200FA000DF53D9 /* BooksListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7894483C2C20035F00DF53D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7894483E2C20036300DF53D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789448412C20036300DF53D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		789448482C200F7600DF53D9 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		7894484A2C200FA000DF53D9 /* BooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				7894483A2C20035F00DF53D9 /* ListViewApp.swift */,
 				7894483C2C20035F00DF53D9 /* ContentView.swift */,
+				789448482C200F7600DF53D9 /* Book.swift */,
+				7894484A2C200FA000DF53D9 /* BooksListView.swift */,
 				7894483E2C20036300DF53D9 /* Assets.xcassets */,
 				789448402C20036300DF53D9 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				7894483D2C20035F00DF53D9 /* ContentView.swift in Sources */,
 				7894483B2C20035F00DF53D9 /* ListViewApp.swift in Sources */,
+				789448492C200F7600DF53D9 /* Book.swift in Sources */,
+				7894484B2C200FA000DF53D9 /* BooksListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
