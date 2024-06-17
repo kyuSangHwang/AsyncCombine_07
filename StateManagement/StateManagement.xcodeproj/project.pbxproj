@@ -13,6 +13,7 @@
 		781B48A22C1FF046007BB191 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781B48A12C1FF046007BB191 /* Preview Assets.xcassets */; };
 		789448272C1FF23E00DF53D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789448262C1FF23E00DF53D9 /* ContentView.swift */; };
 		789448292C1FF6A400DF53D9 /* EnvironmentObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789448282C1FF6A400DF53D9 /* EnvironmentObjectView.swift */; };
+		7894482B2C1FFC5A00DF53D9 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894482A2C1FFC5A00DF53D9 /* SettingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		781B48A12C1FF046007BB191 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		789448262C1FF23E00DF53D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		789448282C1FF6A400DF53D9 /* EnvironmentObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectView.swift; sourceTree = "<group>"; };
+		7894482A2C1FFC5A00DF53D9 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				781B489C2C1FF043007BB191 /* ParentView.swift */,
 				789448262C1FF23E00DF53D9 /* ContentView.swift */,
 				789448282C1FF6A400DF53D9 /* EnvironmentObjectView.swift */,
+				7894482A2C1FFC5A00DF53D9 /* SettingScreen.swift */,
 				781B489E2C1FF046007BB191 /* Assets.xcassets */,
 				781B48A02C1FF046007BB191 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7894482B2C1FFC5A00DF53D9 /* SettingScreen.swift in Sources */,
 				781B489D2C1FF043007BB191 /* ParentView.swift in Sources */,
 				789448292C1FF6A400DF53D9 /* EnvironmentObjectView.swift in Sources */,
 				781B489B2C1FF043007BB191 /* StateManagementApp.swift in Sources */,
