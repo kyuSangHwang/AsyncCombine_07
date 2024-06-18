@@ -10,6 +10,7 @@ import SwiftUI
 struct BookDetailView: View {
     @Binding var book: Book
     @State var showEditBookView = false
+    
     var body: some View {
         Form {
             Text(book.title)
@@ -28,7 +29,7 @@ struct BookDetailView: View {
         }
         .navigationTitle(book.title)
         .sheet(isPresented: $showEditBookView) {
-            BookEditView(book: $book)
+            BookEditView(book: book)
         }
     }
 }
