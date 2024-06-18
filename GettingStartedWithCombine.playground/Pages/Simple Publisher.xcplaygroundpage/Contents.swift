@@ -21,6 +21,10 @@ Just("Combine")
         print("Hello, \(value)")
     }
 
+String(123).publisher
+    .sink { value in
+        print("Hello, \(value)")
+    }
 
 123.words.publisher
     .sink { value in
@@ -32,7 +36,5 @@ Just("Combine")
         print("Hello, \(value)")
     }
 
-String(123).publisher
-    .sink { value in
-        print("Hello, \(value)")
-    }
+print(123.words)
+print(123.description)
