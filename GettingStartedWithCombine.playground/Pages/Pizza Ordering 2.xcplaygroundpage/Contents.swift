@@ -12,6 +12,7 @@ let orderStatusPublisher = NotificationCenter.default.publisher(for: .didUpdateO
   .compactMap { notification in
     notification.userInfo?["status"] as? OrderStatus
   }
+  .print()
   .eraseToAnyPublisher()
 
 let shippingAddressValidPublisher = NotificationCenter.default.publisher(for: .didValidateAddress, 
@@ -19,6 +20,7 @@ let shippingAddressValidPublisher = NotificationCenter.default.publisher(for: .d
   .compactMap { notification in
     notification.userInfo?["addressStatus"] as? AddressStatus
   }
+  .print()
   .eraseToAnyPublisher()
 
 let readyToProducePublisher = Publishers.CombineLatest(orderStatusPublisher, shippingAddressValidPublisher)
