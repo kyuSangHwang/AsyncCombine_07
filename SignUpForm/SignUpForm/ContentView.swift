@@ -97,9 +97,7 @@ class SignUpFormViewModel: ObservableObject {
 //    }
     
     init() {
-        
         isFormValidPublisher.assign(to: &$isValid)
-        
         Publishers.CombineLatest(isUsernameLengthValidPublisher, isUsernameAvailablePublisher)
             .map { isUsernameLengthValid, isUserNameAvailable in
                 switch (isUsernameLengthValid, isUserNameAvailable) {
