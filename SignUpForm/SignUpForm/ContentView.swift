@@ -17,9 +17,30 @@ class SignUpFormViewModel: ObservableObject {
     @Published var passwordMessage: String = ""
     @Published var isValid: Bool = false
     
+    @Published var isUserNameAvailable: Bool = false
+    
+    private let authenticationService = AuthenticationService()
+    
+    private var cancellables: Set<AnyCancellable> = []
+    
     private lazy var isUsernameLengthValidPublisher: AnyPublisher<Bool, Never> = {
         $username.map { $0.count >= 3 }.eraseToAnyPublisher()
     }()
+    
+    func checkUserNameAvailable(_ userName: String) {
+        authenticationService.checkUserNameAvailableWithClosure(userName: userName) {
+            [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let isAvailable):
+                    self?.isUserNameAvailable = isAvailable
+                case .failure(let error):
+                    print("error: \(error)")
+                    self?.isUserNameAvailable = false
+                }
+            }
+        }
+    }
     
     private lazy var isPasswordEmptyPublisher: AnyPublisher<Bool, Never> = {
         $password.map(\.isEmpty).eraseToAnyPublisher()
@@ -46,6 +67,13 @@ class SignUpFormViewModel: ObservableObject {
     
     
     init() {
+        $username
+            .debounce(for: 0.5, scheduler: DispatchQueue.main)
+            .sink { [weak self] userName in
+                self?.checkUserNameAvailable(userName)
+            }
+            .store(in: &cancellables)
+        
         isFormValidPublisher.assign(to: &$isValid)
         isUsernameLengthValidPublisher.map { $0 ? "" : "Username must be at least three characters!"}
             .assign(to: &$usernameMessage)
