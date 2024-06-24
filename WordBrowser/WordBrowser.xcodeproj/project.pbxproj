@@ -61,8 +61,8 @@
 				78980DD82C292A6900C0738C /* Info.plist */,
 				78980DC92C29294700C0738C /* WordBrowserApp.swift */,
 				78980DCB2C29294700C0738C /* ContentView.swift */,
-				78980DD92C2930FA00C0738C /* LibraryViewModel.swift */,
 				78980DDB2C29365200C0738C /* AddWordView.swift */,
+				78980DD92C2930FA00C0738C /* LibraryViewModel.swift */,
 				78980DCD2C29294A00C0738C /* Assets.xcassets */,
 				78980DCF2C29294A00C0738C /* Preview Content */,
 			);
