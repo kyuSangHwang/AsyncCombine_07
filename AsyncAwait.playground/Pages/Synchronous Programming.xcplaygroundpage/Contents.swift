@@ -13,8 +13,8 @@ public func sandwichMakerSays(_ message: String, waitFor time: UInt32 = 0) {
 }
 
 func toastBread(_ bread: String) -> String {
-    sandwichMakerSays("Toasting the bread... Standing by...", waitFor: 5)
-    return "Crispy \(bread)"
+    sandwichMakerSays("Toasting th bread... Standing by...", waitFor: 5)
+    return "Cripy \(bread)"
 }
 
 func slice(_ ingredients: [String]) -> [String] {
@@ -29,7 +29,7 @@ func makeSandwich(bread: String, ingredients: [String], condiments: [String]) ->
     sandwichMakerSays("Preparing your sandwich...")
     let toasted = toastBread(bread)
     let sliced = slice(ingredients)
-    sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) on \(toasted)")
+    sandwichMakerSays("Spreading \(condiments.joined(separator: ", and "))")
     sandwichMakerSays("Layering \(sliced.joined(separator: ", "))")
     sandwichMakerSays("Putting lettuce on top")
     sandwichMakerSays("Putting another slice of bread on top")
@@ -41,8 +41,8 @@ sandwichMakerSays("Please place your order.")
 
 let clock = ContinuousClock()
 let time = clock.measure {
-    let sandwich = makeSandwich(bread: "Rye", ingredients: ["Cucumbers", "Tomatoes"], condiments: ["Mayo", "Mustard"])
-    customerSays("Hmmm.... this looks like a delicious \(sandwich) sandwich!")
+  let sandwich = makeSandwich(bread: "Rye", ingredients: ["Cucumbers", "Tomatoes"], condiments: ["Mayo", "Mustard"])
+  customerSays("Hmmm.... this looks like a delicious \(sandwich) sandwich!")
 }
 
 print("Making this sandwich took \(time)")

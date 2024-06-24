@@ -25,7 +25,7 @@ func toastBread(_ bread: String,
 }
 
 func slice(_ ingredients: [String],
-           completion: @escaping ([String]) -> Void)
+        completion: @escaping ([String]) -> Void)
 {
     DispatchQueue.global().async {
         let result = ingredients.map { ingredient in
@@ -38,18 +38,18 @@ func slice(_ ingredients: [String],
 
 func makeSandwich(bread: String, ingredients: [String], condiments: [String],
                   completion: @escaping (String) -> Void) {
-    sandwichMakerSays("Preparing your sandwich...")
+  sandwichMakerSays("Preparing your sandwich...")
     
-    toastBread(bread) { toasted in
-        slice(ingredients) { sliced in
-            sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) om \(toasted)")
-            sandwichMakerSays("Layering \(sliced.joined(separator: ", "))")
-            sandwichMakerSays("Putting lettuce on top")
-            sandwichMakerSays("Putting another slice of bread on top")
-            
-            completion("\(ingredients.joined(separator: ", ")), \(condiments.joined(separator: ", ")) on \(toasted)")
-        }
+  toastBread(bread) { toasted in
+    slice(ingredients) { sliced in
+      sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) om \(toasted)")
+      sandwichMakerSays("Layering \(sliced.joined(separator: ", "))")
+      sandwichMakerSays("Putting lettuce on top")
+      sandwichMakerSays("Putting another slice of bread on top")
+      
+      completion("\(ingredients.joined(separator: ", ")), \(condiments.joined(separator: ", ")) on \(toasted)")
     }
+  }
 }
 
 sandwichMakerSays("Hello to Cafe Complete, where we handle your order with care.")
@@ -58,10 +58,10 @@ sandwichMakerSays("Please place your order.")
 let clock = ContinuousClock()
 let start = clock.now
 makeSandwich(bread: "Rye", ingredients: ["Cucumbers", "Tomatoes"], condiments: ["Mayo", "Mustard"]) { sandwich in
-    customerSays("Hmmm.... this looks like a delicious \(sandwich) sandwich!")
-    
-    let time = clock.now - start
-    print("Making this sandwich took \(time)")
+  customerSays("Hmmm.... this looks like a delicious \(sandwich) sandwich!")
+  
+  let time = clock.now - start
+  print("Making this sandwich took \(time)")
 }
 
 print("The end.")
