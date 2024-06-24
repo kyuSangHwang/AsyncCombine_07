@@ -20,11 +20,13 @@ class LibraryViewModel: ObservableObject {
     init() {
         Publishers.CombineLatest($searchText, $tips).map { query, items in
             items.filter { item in query.isEmpty ? true : item.contains(query) }
-        }.assign(to: &$filteredTips)
+        }
+        .assign(to: &$filteredTips)
         
         Publishers.CombineLatest($searchText, $favorites).map { query, items in
             items.filter { item in query.isEmpty ? true : item.contains(query) }
-        }.assign(to: &$filteredFavorites)
+        }
+        .assign(to: &$filteredFavorites)
     }
     
     func addFavorite(_ word: String) {

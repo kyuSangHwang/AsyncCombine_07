@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  WordBrowser
 //
-//  Created by Jungman Bae on 6/24/24.
+//  Created by 황규상 on 6/24/24.
 //
 
 import SwiftUI
