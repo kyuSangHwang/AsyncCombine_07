@@ -19,6 +19,8 @@
 		78980DCB2C29294700C0738C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78980DCD2C29294A00C0738C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78980DD02C29294A00C0738C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78980DD72C2929C200C0738C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		78980DD82C292A6900C0738C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		78980DBD2C29294700C0738C = {
 			isa = PBXGroup;
 			children = (
+				78980DD72C2929C200C0738C /* Config.xcconfig */,
 				78980DC82C29294700C0738C /* WordBrowser */,
 				78980DC72C29294700C0738C /* Products */,
 			);
@@ -51,6 +54,7 @@
 		78980DC82C29294700C0738C /* WordBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				78980DD82C292A6900C0738C /* Info.plist */,
 				78980DC92C29294700C0738C /* WordBrowserApp.swift */,
 				78980DCB2C29294700C0738C /* ContentView.swift */,
 				78980DCD2C29294A00C0738C /* Assets.xcassets */,
@@ -147,6 +151,7 @@
 /* Begin XCBuildConfiguration section */
 		78980DD22C29294A00C0738C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78980DD72C2929C200C0738C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -210,6 +215,7 @@
 		};
 		78980DD32C29294A00C0738C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78980DD72C2929C200C0738C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WordBrowser/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WordBrowser/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WordBrowser/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WordBrowser/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
