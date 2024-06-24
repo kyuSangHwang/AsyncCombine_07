@@ -12,6 +12,7 @@
 		78980DCE2C29294A00C0738C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78980DCD2C29294A00C0738C /* Assets.xcassets */; };
 		78980DD12C29294A00C0738C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78980DD02C29294A00C0738C /* Preview Assets.xcassets */; };
 		78980DDA2C2930FA00C0738C /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78980DD92C2930FA00C0738C /* LibraryViewModel.swift */; };
+		78980DDC2C29365200C0738C /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78980DDB2C29365200C0738C /* AddWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		78980DD72C2929C200C0738C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		78980DD82C292A6900C0738C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		78980DD92C2930FA00C0738C /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		78980DDB2C29365200C0738C /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				78980DC92C29294700C0738C /* WordBrowserApp.swift */,
 				78980DCB2C29294700C0738C /* ContentView.swift */,
 				78980DD92C2930FA00C0738C /* LibraryViewModel.swift */,
+				78980DDB2C29365200C0738C /* AddWordView.swift */,
 				78980DCD2C29294A00C0738C /* Assets.xcassets */,
 				78980DCF2C29294A00C0738C /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78980DDC2C29365200C0738C /* AddWordView.swift in Sources */,
 				78980DCC2C29294700C0738C /* ContentView.swift in Sources */,
 				78980DDA2C2930FA00C0738C /* LibraryViewModel.swift in Sources */,
 				78980DCA2C29294700C0738C /* WordBrowserApp.swift in Sources */,
