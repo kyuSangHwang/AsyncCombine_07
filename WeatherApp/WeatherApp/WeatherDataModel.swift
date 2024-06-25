@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WeatherData: Codable {
+struct WeatherDataModel: Codable {
     let temperature: Double // 섭씨 온도
     let description: String // 날씨 설명
     let humidity: Double    // 습도
